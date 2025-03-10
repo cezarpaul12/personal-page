@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(2, 35, 73);
+    padding-top: 70px;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(2, 35, 73, 0.8);
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+
+
+
+.navbar a:hover {
+    border-color: #fff;
+}
+
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgb(2, 35, 73) 20%, rgb(100, 200, 255) 50%, rgb(2, 35, 73) 80%);
+    margin-bottom: 80px; 
+    padding: 50px;
+    border-radius: 30px;
+}
+
+
+.section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+.section p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    width: 90%;
+    color:#fff;
+}
+
+
+.contact-section {
+    background: rgb(2, 35, 73);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.contact-section h1 {
+    font-size: 40px;
+}
+
+.contact-section p {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+
+.download-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #fff;
+    box-shadow: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
+
+.animated {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    text-align: left; 
+    color: white;
+    background: linear-gradient(to right, 
+        rgb(2, 35, 73) 5%,  
+        rgb(100, 200, 255) 80%,  
+        rgb(2, 35, 73) 95%  
+    );
+    margin-bottom: 80px;
+    padding: 55px 10%;
+    white-space: normal;
+
+}
+
+
+.contact-section {
+    text-align: center;
+    align-items: center;
+}
+
+.home-img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
+    margin-left: 200;
+}
+.img-box {
+    width: 40%;
+    height: 150%;
+    border-radius: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    margin-bottom: 60px;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+.home-detail {
+  
+   
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-color:  #fff;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0 0 10px #fff;
+    
+}
+.home-detail .img-box{
+    align-items: center;
+}
+.portfolio-img{
+    margin-
+}
