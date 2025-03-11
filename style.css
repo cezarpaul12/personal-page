@@ -195,31 +195,23 @@ header {
     align-items: center;
 }
 
-.home-img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    
-    margin-left: 200;
-}
-.img-box {
-    width: 40%;
-    height: 150%;
-    border-radius: 50%;
-    flex: 1;
-    display: flex;
-    justify-content: flex-end; /* Align image to the right */
-    margin-bottom: 60px;
-}
+
 
 .home-section {
-    display: flex;
+    
     align-items: center;
     justify-content: space-between;
-    text-align: left; /* Ensure text is aligned to the left */
+    text-align: left; 
+    margin-top: 0;
 }
 
 .home-detail {
+
+  width:400px;
+  height:80%;
+  margin-right: 500px;
+  padding-top: 50px;
+  -moz-text-size-adjust: 50px;
   
    
 }
@@ -235,9 +227,30 @@ header {
     box-shadow: 0 0 10px #fff;
     
 }
-.home-detail .img-box{
-    align-items: center;
+.img-box {
+  
+    margin-left:300px;
+    margin-top:-70%;
+    height: 80%;
 }
-.portfolio-img{
-    margin-
+
 }
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Stiluri pentru tablete */
+  @media (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Stiluri pentru desktop */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+  }
