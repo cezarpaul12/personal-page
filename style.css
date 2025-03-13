@@ -11,12 +11,10 @@ body {
     padding-top: 70px;
 }
 
-
 .container {
     width: 90%;
     margin: 0 auto;
 }
-
 
 header {
     position: fixed;
@@ -38,6 +36,27 @@ header {
     font-weight: 600;
 }
 
+/* Poziționarea butonului hamburger în dreapta sus */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Meniul ascuns la început și vizibil la click */
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
 .navbar a {
     color: #fff;
     text-decoration: none;
@@ -48,14 +67,103 @@ header {
     transition: 0.3s;
 }
 
-
-
-
 .navbar a:hover {
     border-color: #fff;
 }
 
+/* Meniul activ pe mobil */
+.navbar.active {
+    display: block;
+}
 
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Stiluri pentru mobile */
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+}
+
+/* Stiluri pentru secțiunea home */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgb(2, 35, 73) 20%, rgb(100, 200, 255) 50%, rgb(2, 35, 73) 80%);
+    margin-top: 70px; /* Adăugăm spațiu pentru a evita suprapunerea cu bara de navigare */
+}
+
+.home-detail {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.home-detail h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.home-detail h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.home-detail p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-color: #fff;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 0 0 10px #fff;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/* Alte stiluri pentru restul secțiunilor */
 .section {
     height: 100vh;
     display: flex;
@@ -65,25 +173,10 @@ header {
     text-align: center;
     color: white;
     background: linear-gradient(to right, rgb(2, 35, 73) 20%, rgb(100, 200, 255) 50%, rgb(2, 35, 73) 80%);
-    margin-bottom: 80px; 
+    margin-bottom: 80px;
     padding: 50px;
     border-radius: 30px;
 }
-
-
-.section h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    color:#fff;
-}
-
-.section p {
-    margin-bottom: 20px;
-    font-size: 24px;
-    width: 90%;
-    color:#fff;
-}
-
 
 .contact-section {
     background: rgb(2, 35, 73);
@@ -101,9 +194,7 @@ header {
     font-size: 22px;
     margin-bottom: 20px;
     margin-top: 20px;
-    
 }
-
 
 .download-social {
     display: flex;
@@ -155,7 +246,7 @@ header {
     color: #333;
 }
 
-
+/* Animația pentru header */
 .animated {
     transform: translateY(30px);
     opacity: 0;
@@ -169,88 +260,3 @@ header {
         opacity: 1;
     }
 }
-
-.section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; 
-    text-align: left; 
-    color: white;
-    background: linear-gradient(to right, 
-        rgb(2, 35, 73) 5%,  
-        rgb(100, 200, 255) 80%,  
-        rgb(2, 35, 73) 95%  
-    );
-    margin-bottom: 80px;
-    padding: 55px 10%;
-    white-space: normal;
-
-}
-
-
-.contact-section {
-    text-align: center;
-    align-items: center;
-}
-
-
-
-.home-section {
-    
-    align-items: center;
-    justify-content: space-between;
-    text-align: left; 
-    margin-top: 0;
-}
-
-.home-detail {
-
-  width:400px;
-  height:80%;
-  margin-right: 500px;
-  padding-top: 50px;
-  -moz-text-size-adjust: 50px;
-  
-   
-}
-
-.profile-img {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-color:  #fff;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: 0 0 10px #fff;
-    
-}
-.img-box {
-  
-    margin-left:300px;
-    margin-top:-70%;
-    height: 80%;
-}
-
-
-@media (max-width: 600px) {
-    body {
-      font-size: 14px;
-    }
-  }
-  
-  /* Stiluri pentru tablete */
-  @media (max-width: 1024px) {
-    body {
-      font-size: 16px;
-    }
-  }
-  
-  /* Stiluri pentru desktop */
-  @media (min-width: 1025px) {
-    body {
-      font-size: 18px;
-    }
-  }

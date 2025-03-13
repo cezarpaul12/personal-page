@@ -17,16 +17,23 @@
    <div class="container">
      <header class="animated"> 
         <a href="#" class="logo">Portofolio.</a>
+        
+        <!-- Adăugat butonul hamburger în colțul dreapta sus -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a> 
-            <a href="#services">Services</a>
-             <a href="#portfolio">Portfolio</a>
-           <a href="#contact">Contact</a>
+            <a href="#home" class="active" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a> 
+            <a href="#services" onclick="closeMenu()">Services</a>
+            <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
         </nav>
      </header>
 
-     
      <section id="home" class="section home-section">
          <div class="home-detail">
             <h1>Boltea Cezar</h1>  
@@ -39,28 +46,21 @@
          </div>
        </section>
 
-     
      <section id="about" class="section">
         <h1>Portfolio</h1>
         <p></p>
      </section>
 
-    
      <section id="services" class="section">
         <h1>Services</h1>
-        <p>
-         
-         </p>
+        <p></p>
      </section>
 
-     
      <section id="portfolio" class="section">
         <h1>Portfolio</h1>
-        <p><p>
-        
+        <p></p>
      </section>
 
-    
      <section id="contact" class="contact-section">
         <h1>Contact Me</h1>
         <p>For collaboration opportunities, feel free to reach out to me.<br>I’m open to partnerships, projects, and creative ideas.<br>Let’s work together!<br><br>Drop me an email at : bolteacezar@gmail.com</p>
@@ -68,14 +68,26 @@
         <div class="download-social">
             <a href="#" class="btn">Download CV</a>
             <div class="social-icons">
-                <a href="#"><i class="ri-github-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/cezarpaul12"><i class="ri-github-fill"></i></a>
+                <a href=""><i class="ri-instagram-fill"></i></a>
             </div>
         </div>
-     </section>
+    </section>
 
    </div>
+
+   <!-- Script pentru activarea meniului hamburger -->
+   <script>
+      function toggleMenu() {
+          var navbar = document.querySelector('.navbar');
+          navbar.classList.toggle('active');
+      }
+
+      // Închide meniul când un link este apăsat
+      function closeMenu() {
+          var navbar = document.querySelector('.navbar');
+          navbar.classList.remove('active');
+      }
+   </script>
 </body>
 </html>
