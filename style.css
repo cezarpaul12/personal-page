@@ -123,7 +123,8 @@ header {
     transform: translateX(-50%);
     text-align: center;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    margin-top: ;
 }
 
 .home-detail h1 {
@@ -144,7 +145,7 @@ header {
 .profile-img {
     border-radius: 50%;
     width: 200px;
-    height: 200px;
+    height: 265px;
     object-fit: cover;
     border-color: #fff;
     border-width: 3px;
@@ -155,6 +156,7 @@ header {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: -30px;
 }
 
 .img-box {
