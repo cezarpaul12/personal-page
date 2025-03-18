@@ -101,6 +101,11 @@ header {
     .navbar a {
         font-size: 20px;
     }
+    .about-section{
+        font-size: 20px;
+        
+
+    }
 }
 
 /* Stiluri pentru secțiunea home */
@@ -124,8 +129,10 @@ header {
     text-align: center;
     color: #fff;
     margin-bottom: 50px;
-    margin-top: ;
+    
 }
+
+
 
 .home-detail h1 {
     font-size: 50px;
@@ -178,6 +185,84 @@ header {
     margin-bottom: 80px;
     padding: 50px;
     border-radius: 30px;
+}
+.about-section {
+   
+    bottom: 0;
+    left: 50%;
+   width: 60%;
+   height: 100%;
+    text-align: center;
+    color: #fff;
+   margin-top: 50px;
+    padding: 0px;
+    
+
+   
+    bottom: 0;
+    left: 50%;
+    transform: translateX(0%);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+
+    
+}
+.about-section	 h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+   
+}
+.about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.services-section{
+    
+    bottom: 0;
+    left: 50%;
+   width: 60%;
+   height: 100%;
+    text-align: center;
+    color: #fff;
+   margin-top: 50px;
+    padding: 0px;
+    
+
+   
+    bottom: 0;
+    left: 50%;
+    transform: translateX(0%);
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.services-section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.section-services1{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgb(2, 35, 73) 20%, rgb(100, 200, 255) 50%, rgb(2, 35, 73) 80%);
+    margin-bottom: 80px;
+    padding: 50px;
+    border-radius: 30px;
+    font-size:18px;
+}
+
+.portfolio-section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .contact-section {
@@ -262,3 +347,4 @@ header {
         opacity: 1;
     }
 }
+
