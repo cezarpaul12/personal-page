@@ -1,109 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Amelia Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Personal Page</title>
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-        rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-   
-   
-   <div class="container">
-     <header class="animated"> 
-        <a href="#" class="logo">Portofolio.</a>
-        
-        <!-- Adăugat butonul hamburger în colțul dreapta sus -->
-        <div class="hamburger-menu" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Cezar Boltea</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></div>
+
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
+               
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
-
-        <nav class="navbar">
-            <a href="#home" class="active" onclick="closeMenu()">Home</a>
-            <a href="#about" onclick="closeMenu()">About</a> 
-            <a href="#services" onclick="closeMenu()">Services</a>
-            <a href="#contact" onclick="closeMenu()">Contact</a>
-        </nav>
-     </header>
-
-     <section id="home" class="section home-section">
-         <div class="home-detail">
-            <h1>Boltea Cezar</h1>  
-            <h2>Web Developer</h2>  
-            <p>Hi! I'm a web developer. I create modern, fast, and optimized websites, bringing ideas to life through code.</p>  
-            <p>Explore my portfolio and let's work together on your next project!</p>  
-         </div>
-         <div class="img-box">
-            <img src="WhatsApp Image 2025-03-13 at 20.13.06 (1).jpeg" alt="" class="profile-img">
-         </div>
-       </section>
-
-     <section id="about" class="section">
-        <div class="about-section">
-        <h1>About Me</h1>
-        <p>
-        I'm Boltea Cezar, a web developer passionate about technology and digital solutions. I am dedicated to creating websites that are not only functional but also easy to use and accessible. I enjoy turning ideas into reality through code and improving the user experience.
-        </p> 
-            <h1>What I Do?</h1>
-          <p>  My specialization is in developing websites using HTML, CSS, and JavaScript. I focus on creating simple yet effective websites that meet clients' needs and are accessible to everyone. I work to ensure a pleasant experience and smooth navigation, no matter the device being used.
-          </p> 
-            <h1>How I Work?</h1>
-          <p>  I collaborate closely with clients to understand their requirements and create tailored solutions. Every project is approached with seriousness, and delivery is always on time, meeting the requirements and quality standards.
-            
-        </p>
-    </div>
-     </section>
-
-     <section id="services" class="section-services1">
-        <div class="services-section">
-        <h1>Services</h1>
-        <p>
-            I specialize in creating custom websites using HTML, CSS, and JavaScript. Whether you need a personal portfolio, a business website, or an online presence that reflects your brand, I provide modern, responsive, and user-friendly solutions.
-            
-            Each project is crafted with attention to detail, ensuring a smooth and enjoyable experience for users on any device. Together, we will create a website that meets your needs and supports your online goals.
-        </p>
-        </div>
-     </section>
-
-    
-     </section>
-
-     <section id="contact" class="contact-section">
-        <h1>Contact Me</h1>
-        <p>For collaboration opportunities, feel free to reach out to me.<br>I’m open to partnerships, projects, and creative ideas.<br>Let’s work together!<br><br>Drop me an email at: bolteacezar@gmail.com</p>
-
-        <div class="download-social">
-            <a href="#" class="btn">Download CV</a>
-            <div class="social-icons">
-                <a href="https://github.com/cezarpaul12"><i class="ri-github-fill"></i></a>
-                <a href="https://www.instagram.com/bolteacezar_/"><i class="ri-instagram-fill"></i></a>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
-    </section>
-
-   </div>
-
-   <!-- Script pentru activarea meniului hamburger -->
-   <script>
-      function toggleMenu() {
-          var navbar = document.querySelector('.navbar');
-          navbar.classList.toggle('active');
-      }
-
-      // Închide meniul când un link este apăsat
-      function closeMenu() {
-          var navbar = document.querySelector('.navbar');
-          navbar.classList.remove('active');
-      }
-   </script>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="WhatsApp Image 2025-03-13 at 20.13.06 (1).jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Cezar Boltea</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a Web Developer</div>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/cezarpaul12" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
 </body>
 </html>
