@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boltea Cezar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+   
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+   <div class="main-about">
+        <div class="text-about">
+            <h1>Services</h1>
+            <p>I specialize in creating custom websites using HTML, CSS, and JavaScript. Whether you need a personal portfolio, a business website, or an online presence that reflects your brand, I provide modern, responsive, and user-friendly solutions.</p>
+            <p>Each project is crafted with attention to detail, ensuring a smooth and enjoyable experience for users on any device. Together, we will create a website that meets your needs and supports your online goals.</p>
+            
+        </div>
+   </div>
+   
+   <script>
+    function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+    }
+</script>
+</body>
+</html>

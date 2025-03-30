@@ -148,7 +148,7 @@ section{
 .main-container .image{
     z-index: -1;
     width: 60%; 
-   margin-left: 100px;
+   margin-left: 150px;
   
 }
 
@@ -259,6 +259,28 @@ section{
  background-color: transparent;
  font-weight: 700;
  box-shadow: 0 0 40px rgb(109,67, 0);
+}
+
+.main-about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.text-about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-about h1 {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.text-about p {
+    font-size: 1.8em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 @media (max-width:884px) {
